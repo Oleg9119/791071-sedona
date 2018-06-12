@@ -6,7 +6,6 @@
 </head>
 <body>
 	<header class="main-header">
-
 		<nav class="main-navigation">
 			<a class="main-header-logo">
 				<img src="img/index-logo.png" width="138" height="70" alt="Логотип Седона">
@@ -20,18 +19,78 @@
 		</nav>
 	</header>
 	<main class="container">
-		<h1 class="visually-hidden">Список отелей</h1>
-
-		<!--Здесь будут формы
+		<h1 class="visually-hidden">Список отелей</h1>	
 		<section class="filters">
-			<h2>Инфраструктура:</h2>
-			<h2>Тип жилья:</h2>	
-			<h2>Стоимость в сутки:</h2>	
-			<h2>Найдено:</h2>
-			<h3>Сортировка:</h3>
+			<h2 class="visually-hidden">Выбор отеля</h2>
+			<form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
+				<fieldset class="infrastructure">
+					<legend>Инфрастуктура:</legend>
+						<ul>
+							<li>
+								<input type="checkbox" name="pool" id="filter-pool" checked>
+								<label for="filter-pool">Бассейн</label>
+							</li>
+							<li>
+								<input type="checkbox" name="parking" id="filter-parking">
+								<label for="filter-parking">Парковка</label>
+							</li>
+							<li>
+								<input type="checkbox" name="wifi" id="filter-wifi">
+								<label for="filter-wifi">Wi-fi</label>
+							</li>						
+						</ul>
+				</fieldset>
+				<fieldset class="housing">
+					<legend>Тип жилья:</legend>
+						<ul>
+							<li>
+								<input type="checkbox" name="hotel" id="filter-hotel" checked>
+								<label for="filter-hotel">Гостиница</label>
+							</li>
+							<li>
+								<input type="checkbox" name="motel" id="filter-motel" checked>
+								<label for="filter-motel">Мотель</label>
+							</li>
+							<li>
+								<input type="checkbox" name="apartments" id="filter-apartments" checked>
+								<label for="filter-apartments">Апартаменты</label>
+							</li>						
+						</ul>
+				</fieldset>				
+				<fieldset>
+					<legend>Стоимость в сутки (р):</legend>
+					<p class="fromto">
+						<div class="min-container">
+							<label for="min-cost">От</label>
+							<input id="min-cost" type="text" name="cost">
+						</div>
+						<div class="max-container">
+							<label for="max-cost">До</label>
+							<input id="max-cost" type="text" name="cost">
+						</div>
+					</p>
+					<div class="range">
+						<button class="range-min" type="button"><img src="img/filter-button.svg" alt="Минимальная цена"></button> 
+						<button class="range-max" type="button"><img src="img/filter-button.svg" alt="Максимальная цена"></button> 
+					</div>					
+					<button class="button" type="submit">Показать</button>
+				</fieldset>	
+			</form>	
 		</section>
-		-->
-
+		<section class="sort-by">
+			<h2 class="visually-hidden">Сортировка отелей</h2>
+			<h3 class="found">Найдено: 3</h3>	
+			<p>Сортировка:</p>
+			<ul class="sort-type">
+				<li><a href="#" class="">По цене</a></li>
+				<li><a href="#" class="">По типу</a></li>
+				<li><a href="#" class="">По рейтингу</a></li>
+			</ul>
+			<ul class="sort-order">
+				<li><a href="#" class=""><img src="img/icon-up-dir.svg" alt="По возрастанию"></a></li>
+				<li><a href="#" class=""><img src="img/icon-down-dir.svg" alt="По убыванию"></a></li>
+			</ul>				
+		</section>	
 		<section class="hotels">
 			<h2 class="visually-hidden">Список отелей</h2>
 			<ul class="hotels-list">
@@ -49,7 +108,6 @@
 					<div class="stars">4</div>
 					<p class="rate">Рейтинг: 8,5</p>
 				</li>
-
 				<li class="hotel-item">
 					<p>
 						<img src="img/hotel-2.jpg" width="135" height="90" alt="Desert quail inn">					
@@ -64,7 +122,6 @@
 					<div class="stars">3</div>
 					<p class="rate">Рейтинг: 8,9</p>
 				</li>
-
 				<li class="hotel-item">
 					<p>
 						<img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at poco diablo">				
@@ -82,7 +139,6 @@
 			</ul>
 		</section>
 	</main>
-
 	<footer class="main-footer">
 		<p class="footer-contacts">#Visitsedona</p>
 		<div class="footer-socials">

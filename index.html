@@ -6,7 +6,6 @@
 </head>
 <body>
 	<header class="main-header">
-
 		<nav class="main-navigation">
 			<a class="main-header-logo">
 				<img src="img/index-logo.png" width="138" height="70" alt="Логотип Седона">
@@ -19,16 +18,12 @@
 			</ul>
 		</nav>
 	</header>
-
-	<main class="container">
-		
+	<main class="container">		
 		<h1 class="visually-hidden">Седона</h1>	
-
 		<section class="description">
 			<h2>Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 		</section>
-
 		<section class="city">
 			<div class="city-about">
 				<h2>Настоящий городок</h2>
@@ -36,10 +31,9 @@
 				<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 			</div>
 			<p>
-				<img src="img/photo-1.jpg" width="800" height="256" alt="Настоящий городок">			
+				<img src="img/photo-1.jpg" width="800" height="256" alt="Настоящий городок">
 			</p>
 		</section>
-
 		<section class="features">
 			<h2 class="visually-hidden">Особенности</h2>
 			<ul class="features-list">
@@ -57,7 +51,6 @@
 				</li>
 			</ul>
 		</section>
-
 		<section class="bridge">
 			<div class="bridge-about">
 				<h2>Там есть мост дьявола</h2>
@@ -65,10 +58,9 @@
 				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 			</div>
 			<p>				
-				<img src="img/photo-2.jpg" width="800" height="256" alt="Мост дьявола">				
+				<img src="img/photo-2.jpg" width="800" height="256" alt="Мост дьявола">		
 			</p>
 		</section>
-
 		<section class="advantages">
 			<h2 class="visually-hidden">Преимущества</h2>
 			<ul class="advantages-list">
@@ -92,20 +84,19 @@
 				</li>
 			</ul>			
 		</section>
-
 		<section class="treatment">
 			<h2>Заинтересовались?</h2>
-			<p>Укажите предполагаемые даты поездки,<br> 
-			и мы покажем вам лучшие предложения гостиниц в седоне
+			<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
 			</p>
+			<button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
 		</section>
-
 		<section class="map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
-			<img src="#" alt="Схема проезда">
+			<p>
+				<img src="img/index-map.png" width="1200" height="592" alt="Схема проезда в Седону">
+			</p>
 		</section>
 	</main>	
-
 	<footer class="main-footer">
 		<p class="footer-contacts">#Visitsedona</p>
 		<div class="footer-socials">
@@ -120,19 +111,46 @@
 			<a href="https://htmlacademy.ru" class="button"></a>
 		</p>
 	</footer>
-
 	<section class="modal modal-hotel">
-		<h2>Поиск гостиницы в Седоне</h2>
-		<p>Дата заезда:</p>
-		<!--Здесь будет форма-->
-		<p>Дата выезда:</p>
-		<!--Здесь будет форма-->
-		<p>Взрослые:</p>
-		<!--Здесь будет форма-->
-		<p>Дети:</p>
-		<!--Здесь будет форма-->
-		<!--Здесь будет форма-->
-		<span class="modal-close">x</span>		
+		<h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+		<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="search-item">
+				<label for="entry-date">Дата заезда:
+				<div class="gray">
+					<input id="entry-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+					<button class="button calendar-button" type="button"><img src="img/calendar.svg" alt="Выбрать дату заезда"></button>
+				</div>
+				</label>				
+			</p>
+			<p class="search-item">
+				<label for="departure-date">Дата выезда:
+				<div class="gray">
+					<input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
+					<button class="button calendar-button" type="button"><img src="img/calendar.svg" alt="Выбрать дату выезда"></button>
+				</div>
+				</label>				
+			</p>
+			<p class="search-item">
+				<label for="adults">Взрослые:
+				<div class="gray">
+					<button class="button sign-button" type="button">Минус</button>
+					<input id="adults" type="number" name="amount" value="2" min="0">
+					<button class="button sign-button" type="button">Плюс</button>
+				</div>
+				</label>
+			</p>
+			<p class="search-item">
+				<label for="children">Дети:
+				<div class="gray">
+					<button class="button sign-button" type="button">Минус</button>
+					<input id="children" type="number" name="amount" value="0" min="0">
+					<button class="button sign-button" type="button">Плюс</button>
+				</div>
+				</label>
+			</p>
+			<button class="button" type="submit">Найти</button>          
+        </form> 		
+		<button class="modal-close" type="button">Закрыть</button>	
 	</section>
 </body>
 </html>
