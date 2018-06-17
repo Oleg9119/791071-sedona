@@ -3,18 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Седона каталог</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo">
+			<a class="main-header-logo" href="index.html">
 				<img src="img/index-logo.png" width="138" height="70" alt="Логотип Седона">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="media.html">Фото и видео</a></li>
 				<li><a href="map.html">Карта штата</a></li>
-				<li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+				<li class="site-navigation-current">Гостиницы</li>
 			</ul>
 		</nav>
 	</header>
@@ -57,7 +60,7 @@
 							</li>						
 						</ul>
 				</fieldset>				
-				<fieldset>
+				<fieldset class="daycost">
 					<legend>Стоимость в сутки (р):</legend>
 					<p class="fromto">
 						<div class="min-container">
@@ -73,7 +76,7 @@
 						<button class="range-min" type="button"><img src="img/filter-button.svg" alt="Минимальная цена"></button> 
 						<button class="range-max" type="button"><img src="img/filter-button.svg" alt="Максимальная цена"></button> 
 					</div>					
-					<button class="button" type="submit">Показать</button>
+					<button class="button show-button" type="submit">Показать</button>
 				</fieldset>	
 			</form>	
 		</section>
@@ -82,9 +85,9 @@
 			<h3 class="found">Найдено: 3</h3>	
 			<p>Сортировка:</p>
 			<ul class="sort-type">
-				<li><a href="#" class="">По цене</a></li>
-				<li><a href="#" class="">По типу</a></li>
-				<li><a href="#" class="">По рейтингу</a></li>
+				<li class="sort-item-active"><a href="#" class="">По цене</a></li>
+				<li class="sort-item"><a href="#" class="">По типу</a></li>
+				<li class="sort-item"><a href="#" class="">По рейтингу</a></li>
 			</ul>
 			<ul class="sort-order">
 				<li><a href="#" class=""><img src="img/icon-up-dir.svg" alt="По возрастанию"></a></li>
@@ -150,7 +153,7 @@
 		</div>
 		<p class="footer-right">
 			<b>Website by</b>
-			<a href="https://htmlacademy.ru" class="button"></a>
+			<a href="https://htmlacademy.ru" class="button">HTML Academy</a>
 		</p>
 	</footer>	
 </body>
