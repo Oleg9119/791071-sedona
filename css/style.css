@@ -39,6 +39,7 @@ a{
 }
 
 .description{
+	background-image: url("../img/index-background.jpg");
 	text-align: center;
 	background-color: #ffffff;
 }
