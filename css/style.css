@@ -38,10 +38,20 @@ a{
 	opacity: .3;
 }
 
+<<<<<<< HEAD
 .description{
 	background-image: url("../img/index-background.jpg");
+=======
+.description{	
+>>>>>>> 5ed769b9a426f70470062cdbde15ed1e8400ba79
 	text-align: center;
 	background-color: #ffffff;
+}
+
+.description-background{
+	background-image: url("../img/index-background.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .description h2{
