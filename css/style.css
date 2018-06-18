@@ -38,9 +38,15 @@ a{
 	opacity: .3;
 }
 
-.description{
+.description{	
 	text-align: center;
 	background-color: #ffffff;
+}
+
+.description-background{
+	background-image: url("../img/index-background.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .description h2{
