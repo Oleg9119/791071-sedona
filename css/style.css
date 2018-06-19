@@ -38,12 +38,15 @@ a{
 	opacity: .3;
 }
 
-.description{
-	text-align: center;
-	background-color: #ffffff;
+.description-wrap{
 	background-image: url("../img/index-background.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	min-height: 780px;
+}
+
+.description{
+	text-align: center;	
 }
 
 .description h2{
