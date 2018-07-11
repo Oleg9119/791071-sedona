@@ -912,6 +912,8 @@ button.calendar-icon:active svg {
   	        flex-grow: 1;
   	-ms-flex-preferred-size: 0;
   	    flex-basis: 0;
+  	    padding-bottom: 3px;
+  	    margin-left: 35px;
 }
 
 ul.footer-socials{
@@ -937,6 +939,7 @@ ul.footer-socials{
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
+	        padding-bottom: 3px;
 }
 
 .footer-socials a,
@@ -990,6 +993,8 @@ ul.footer-socials{
           flex-grow: 1;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
+      padding-bottom: 2px;
+      margin-right: 34px;
 }
 
 .footer-right span{
@@ -1109,9 +1114,9 @@ ul.footer-socials{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;	
-	padding-top: 30px;
+	padding-top: 29px;
 	padding-left: 6%;
-	padding-right: 6%;
+	padding-right: 6%;	
 }
 
 .selection-form{
@@ -1125,7 +1130,11 @@ ul.footer-socials{
 	margin: 0;
 	margin-right: 5%;
 	min-width: 204px;
-	border: none;	
+	border: none;		
+}
+
+.cost-per-day{
+	border: none;
 }
 
 .selection-form legend{
@@ -1171,21 +1180,12 @@ ul.footer-socials{
 	height: 25px;
 }
 
-.infrastructure ul{
-	text-align: left;
-	padding: 0;
-}
-
 .housing{	
 	border: none;
 	padding: 0;
 	margin-right: auto;
 	min-width: 204px;
-}
-
-.infrastructure,
-.housing{
-	text-align: center;
+	margin-left: 0px;
 }
 
 .infrastructure li,
@@ -1202,10 +1202,20 @@ ul.footer-socials{
 	text-align: left;
 }
 
+.infrastructure legend{		
+	letter-spacing: 1px;		
+}
+
 .infrastructure label,
 .housing label{
 	color: #ffffff;
 }
+
+/*---------------------------------*/
+
+
+
+/*Начало сложного фильтра---------------------*/
 
 .filter-range {
   color: #ffffff;
@@ -1219,18 +1229,19 @@ ul.footer-socials{
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  padding-left: 3px;
 }
 
 .price-controls {
   position: relative;
   
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   font-size: 0;
 
@@ -1265,8 +1276,12 @@ ul.footer-socials{
 
 .price-controls .min-price,
 .price-controls .max-price{
-  width: 90px;
-  padding-left: 65px;
+  width: 103px;
+  padding-left: 55px;
+}
+
+.min-price-text{
+	padding-left: 10px;
 }
 
 .price-controls input{
@@ -1284,28 +1299,26 @@ ul.footer-socials{
   position: relative;
 
   margin-bottom: 32px;
+  margin-left: 5px;
 }
 
-.range-controls .scale {
+.range-controls .scale{
   height: 2px;
 
   background: rgba(255, 255, 255, 0.3);
 }
 
-.range-controls .bar {
+.range-controls .bar{
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
-.range-toggle {
+.range-toggle{
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1314,15 +1327,15 @@ ul.footer-socials{
   cursor: pointer;
 }
 
-.range-toggle:hover {
+.range-toggle:hover{
   background: #1c4f80;
 }
 
-.range-toggle-min {
-  left: 0;
+.range-toggle-min{
+  left: 0;  
 }
 
-.range-toggle-max {
+.range-toggle-max{
   left: 80%;
 }
 
@@ -1340,13 +1353,15 @@ ul.footer-socials{
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  margin-left: 87px;
 }
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
+
+/*-----------------------Конец сложного фильтра*/
 
 .show-button,
 .show-button:focus{
@@ -1366,8 +1381,8 @@ ul.footer-socials{
 	text-align: center;
 	background-color: #fefefe;
 	padding-left: 72px;
-	padding-top: 22px;
-	padding-bottom: 18px;
+	padding-top: 29px;
+	padding-bottom: 16px;
 	padding-right: 72px;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
@@ -1403,11 +1418,13 @@ ul.footer-socials{
 	margin: 0;
 	padding: 0;
 	margin-right: 48px;	
+	padding-bottom: 5px;	
 }
 
 .sort-by p{
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 18px;	
+	padding-bottom: 2px;
 }
 
 .sort-by li,
@@ -1450,11 +1467,12 @@ ul.footer-socials{
 }
 
 .sort-up{
-	margin-right: 11px;	
+	margin-right: 12px;	
 }
 
 .sort-order li{
 	padding-right: 0;
+	padding-bottom: 3px;
 }
 
 .sort-up a{
@@ -1529,7 +1547,7 @@ ul.footer-socials{
 	padding-left: 6%;
 	padding-right: 6%;
 	padding-top: 18px;
-	padding-bottom: 12px;
+	padding-bottom: 11px;
 }
 
 .two-div{
@@ -1540,11 +1558,12 @@ ul.footer-socials{
 
 .two-div-block{
 	text-align: left;
-	margin-bottom: 12px;
+	margin-bottom: 18px;
 }
 
 .two-div span{
 	font-weight: normal;
+	margin-left: 1px;
 }
 
 .two-div h3{
@@ -1552,7 +1571,7 @@ ul.footer-socials{
 	line-height: 26px;
 	margin-top: -15px;
 	margin-left: 2px;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	text-align: left;
 }
 
@@ -1584,11 +1603,11 @@ a.name-hotel:active{
 }
 
 .hotel-price-second{
-	padding-left: 63px;
+	padding-left: 59px;
 }
 
 .hotel-price-third{
-	padding-left: 12px;
+	padding-left: 17px;
 }
 
 .three-div{	
@@ -1609,14 +1628,14 @@ a.name-hotel:active{
 }
 
 .stars-first{
-	margin-left: -8px;
+	
 	margin-bottom: 5px;
 }
 
 .stars-first li:first-child,
 .stars-first li:nth-child(2),
 .stars-first li:nth-child(3){
-	margin-right: 7px;
+	margin-right: 6px;
 }
 
 .stars-second li:first-child,
@@ -1685,7 +1704,6 @@ a.name-hotel:active{
 	color: rgba(255, 255, 255, .3);
 	background-color: #503e33;	
 }
-
 
 
 
